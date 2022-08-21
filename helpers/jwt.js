@@ -12,7 +12,8 @@ function authJwt() {
       `${api}/users/forgotpassword`,
       `${api}/users`,
       `${api}/users/:id`,
-      `${api}/email`
+      `${api}/email`,
+      {url: /\/api\/resumewiz\/profiles\/form\/userprofile(.*)/ , methods: ['GET', 'OPTIONS'] },
       // { url: /(.*)/ },
     ],
   });
