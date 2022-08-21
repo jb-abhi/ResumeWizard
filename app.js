@@ -17,10 +17,6 @@ app.use(express.json());
 app.use(morgan("tiny"));
 app.use(errorHandler);
 
-app.get('/*', function(req, res){
-  res.send('Connetced')
-});
-
 mongoose
   .connect(process.env.CONNECTION_STRING, {
     useNewUrlParser: true,
